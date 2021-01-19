@@ -3,22 +3,22 @@ pipeline {
    stages {
        stage("init") {
            steps {
-               sh "echo running test init."
+               echo "Running test init."
            }
        }
        stage("build") {
            steps {
-               sh "echo running test build."
+               echo "Running build stage"
            }
        }
        stage("test") {
            steps {
-               sh "echo running test stage."
+               echo "Running test stage."
            }
        }
        stage("deploy") {
            steps {
-               sh "echo running deploy stage."
+               echo "Running deploy stage."
            }
        }
    }  
